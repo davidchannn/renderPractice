@@ -43,7 +43,9 @@ const groundMaterial = new THREE.MeshStandardMaterial({
 const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
 scene.add(groundMesh);
 
-const spotLight = new THREE.SpotLight(0xffffff, 1000, 100, 0.2, 0.5);
+// first param is color, second is intensity, not sure what third is,
+// fourth is how wide the cone of light is, not sure what fifth one is
+const spotLight = new THREE.SpotLight(0xffffff, 1000, 100, 1, 0.5);
 spotLight.position.set(0, 20, 0);
 scene.add(spotLight);
 
